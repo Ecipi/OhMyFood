@@ -1,6 +1,25 @@
 // Components
-@use 'variables';
+@use 'variables' as *;
+@use 'mixins' as *;
 @use 'Homepage/header';
 @use 'Homepage/main';
 @use 'Homepage/footer';
-@use 'mixins';
+
+// General
+* {
+    font-family: $font-text;
+}
+
+h2 {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.fa-solid {
+    font-size: 18px;
+    color: $color-i;
+
+    &--primary {
+        color: $color-primary;
+    }
+}

@@ -226,6 +226,7 @@
 @media (min-width: 1024px) {
   .footer__title {
     margin-left: 100px;
+    margin-top: 10px;
     order: 1;
   }
 }

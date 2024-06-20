@@ -9,17 +9,18 @@
     padding: 40px 20px 40px 20px;
     align-items: center;
     text-align: center;
-    background-color: $bg-color-grey-light;
+    background-color: $bg-color-gray-light;
 
     &__title {
         font-size: 24px;
-        margin: 0;
+        margin-bottom: 15px;
     }
 
     &__subtitle {
         font-size: 18px;
         font-weight: 300;
-        color: $font-color-grey;
+        color: $font-color-gray;
+        margin-bottom: 25px;
     }
 
     &__btn {
@@ -31,7 +32,11 @@
 .operation {
     display: flex;
     flex-direction: column;
-    padding: 20px;
+    padding: 50px 30px 50px 30px;
+
+    &__title {
+        margin-bottom: 35px;
+    }
     
     &__groups {
         display: flex;
@@ -43,12 +48,13 @@
         display: flex;
         position: relative;
         flex-direction: row;
+        color: $font-color-black;
         font-size: 16px;
         font-weight: 500;
-        background-color: $bg-color-grey-light;
+        background-color: $bg-color-gray-light;
         box-shadow: 0px 4px 15px 0px #00000026;
         border-radius: 20px;
-        padding: 15px 0 15px 35px;
+        padding: 25px 35px 25px 35px;
         align-items: center;
         gap: 20px;
     }
@@ -73,7 +79,12 @@
 .restaurants {
     display: flex;
     flex-direction: column;
-    padding: 20px;
+    padding: 40px 20px 40px 20px;
+    background-color: $bg-color-gray-light;
+
+    &__title {
+        margin-bottom: 15px;
+    }
 
     &__cards {
         display: flex;
@@ -84,15 +95,55 @@
     &__card {
         display: flex;
         flex-direction: column;
-        background-color: $bg-color-grey-light;
         border-radius: 15px;
-        padding: 20px;
-        gap: 15px;
-        box-shadow: 0px 4px 15px 0px #00000026;
+        background-color: $bg-color-white;
+        position: relative;
     }
 
     img{
         width: 100%;
-        border-radius: 20px;
+        height: 170px;
+        object-fit: cover;
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+    }
+
+    &__card__tag {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 5px 15px 5px 15px;
+        position: absolute;
+        background-color: $bg-color-green;
+        color: $fopnt-color-green;
+        font-size: 14px;
+        font-weight: 500;
+        top: 5%;
+        right: 5%;
+        box-shadow: 0px 2px 4px 0px #00000026;
+        border-radius: 2px;
+    }
+
+    &__card__text {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 15px;
+    }
+
+    &__card__text__title {
+        font-size: 18px;
+        font-weight: 700;
+        margin-bottom: 5px;
+    }
+
+    &__card__text__subtitle {
+        font-size: 17px;
+        font-weight: 300;
+    }
+
+    &__card__text__like {
+        padding-right: 10px;
+        font-size: 20px;
     }
 }

@@ -17,7 +17,7 @@
                 <img src="images/logo/ohmyfood@2x.svg" alt="Logo ohmyfood">
             </div>
             <div class="navbar__location">
-                <i class="fa-solid fa-location-dot"></i>
+                <i class="fa-solid fa-location-dot fa-solid--gray"></i>
                 <p>Paris, Belleville</p>
             </div>
         </div>
@@ -31,26 +31,32 @@
         <section class="operation">
             <h2 class="operation__title">Fonctionnement</h2>
             <div class="operation__groups">
-                <div class="operation__steps">
-                    <div class="operation__num">
-                        <p>1</p>
-                    </div>
-                    <i class="fa-solid fa-mobile-screen-button"></i>
-                    <p>Choisissez un restaurant</p>
+                <div>
+                    <a href="#" class="operation__steps">
+                        <div class="operation__num">
+                            <p>1</p>
+                        </div>
+                        <i class="fa-solid fa-mobile-screen-button"></i>
+                        <p>Choisissez un restaurant</p>
+                    </a>
                 </div>
-                <div class="operation__steps">
-                    <div class="operation__num">
-                        <p>2</p>
-                    </div>
-                    <i class="fa-solid fa-list"></i>
-                    <p>Composez votre menu</p>
+                <div>
+                    <a href="#" class="operation__steps">
+                        <div class="operation__num">
+                            <p>2</p>
+                        </div>
+                        <i class="fa-solid fa-list"></i>
+                        <p>Composez votre menu</p>
+                    </a>
                 </div>
-                <div class="operation__steps">
-                    <div class="operation__num">
-                        <p>3</p>
-                    </div>
-                    <i class="fa-solid fa-store fa-solid--primary"></i>
-                    <p>Dégustez au restaurant</p>
+                <div>
+                    <a href="#" class="operation__steps">
+                        <div class="operation__num">
+                            <p>3</p>
+                        </div>
+                        <i class="fa-solid fa-store fa-solid--primary"></i>
+                        <p>Dégustez au restaurant</p>
+                    </a>
                 </div>
             </div>
         </section>
@@ -60,84 +66,80 @@
                 <article class="restaurants__card">
                     <div>
                         <img src="images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="">
-                        <div>
+                        <div class="restaurants__card__tag">
                             <p>Nouveau</p>
                         </div>
                     </div>
-                    <div>
+                    <div class="restaurants__card__text">
                         <div>
-                            <p>La palette du goût</p>
-                            <p>Ménilmontant</p>
+                            <p class="restaurants__card__text__title">La palette du goût</p>
+                            <p class="restaurants__card__text__subtitle">Ménilmontant</p>
                         </div>
-                        <i class="fa-regular fa-heart"></i>
+                        <i class="fa-regular fa-heart restaurants__card__text__like"></i>
                     </div>
                 </article>
                 <article class="restaurants__card">
                     <div>
                         <img src="images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" alt="">
-                        <div>
+                        <div class="restaurants__card__tag">
                             <p>Nouveau</p>
                         </div>
                     </div>
-                    <div>
+                    <div class="restaurants__card__text">
                         <div>
-                            <p>La note enchantée</p>
-                            <p>Charonne</p>
+                            <p class="restaurants__card__text__title">La note enchantée</p>
+                            <p class="restaurants__card__text__subtitle"></p>Charonne</p>
                         </div>
-                        <i class="fa-regular fa-heart"></i>
+                        <i class="fa-regular fa-heart restaurants__card__text__like"></i>
                     </div>
                 </article>
                 <article class="restaurants__card">
                     <div>
                         <img src="images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="">
                     </div>
-                    <div>
+                    <div class="restaurants__card__text">
                         <div>
-                            <p>À la française</p>
-                            <p>Cité Rouge</p>
+                            <p class="restaurants__card__text__title">À la française</p>
+                            <p class="restaurants__card__text__subtitle"></p>Cité Rouge</p>
                         </div>
-                        <i class="fa-regular fa-heart"></i>
+                        <i class="fa-regular fa-heart restaurants__card__text__like"></i>
                     </div>
                 </article>
                 <article class="restaurants__card">
                     <div>
                         <img src="images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="">
                     </div>
-                    <div>
+                    <div class="restaurants__card__text">
                         <div>
-                            <p>Le délice des sens</p>
-                            <p>Folie-Méricourt</p>
+                            <p class="restaurants__card__text__title">Le délice des sens</p>
+                            <p class="restaurants__card__text__subtitle"></p>Folie-Méricourt</p>
                         </div>
-                        <i class="fa-regular fa-heart"></i>
+                        <i class="fa-regular fa-heart restaurants__card__text__like"></i>
                     </div>
                 </article>
             </div>
     </main>
     <footer>
-        <img src="images/logo/ohmyfood@2x.svg" alt="Logo ohmyfood">
-        <div>
-            <div>
+        <div class="footer">
+            <h2 class="footer__title">ohmyfood</h2>
+            <div class="footer__links">
                 <nav>
                     <ul>
-                        <li>
-                            <i class="fa-solid fa-utensils"></i>
-                            <p>Proposer un restaurant</p>
+                        <li class="footer__partner">
+                            <a href="#"><i class="fa-solid fa-utensils fa-solid--white"></i> Proposer un restaurant</a>
                         </li>
-                        <li>
-                            <i class="fa-solid fa-handshake-angle"></i>
-                            <p>Devenir partenaire</p>
+                        <li class="footer__partner">    
+                            <a href="#"><i class="fa-solid fa-handshake-angle fa-solid--white"></i>Devenir partenaire</a>
                         </li>
                     </ul>
                 </nav>
-            </div>
-            <div>
                 <nav>
                     <ul>
-                        <li>
-                            <p>Mentions légales</p>
+                        <li class="footer__legal">
+                            <a href="#">Mentions légales</a>
                         </li>
-                        <li>
-                            <p>Contact</p>
+                        <li class="footer__legal">
+                            <a href="#">Contact</a>
                         </li>
                     </ul>
                 </nav>

@@ -8,6 +8,7 @@
 // General
 * {
     font-family: $font-text;
+    margin: 0;
 }
 
 h2 {
@@ -22,4 +23,21 @@ h2 {
     &--primary {
         color: $color-primary;
     }
+
+    &--white {
+        color: $font-color-white;
+    }
+
+    &--gray {
+        color: $font-color-gray;
+    }
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
 }

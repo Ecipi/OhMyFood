@@ -103,6 +103,10 @@
     padding: 40px 20px 40px 20px;
     background-color: $bg-color-gray-light;
 
+    & a {
+        color: $font-color-black;
+    }
+
     @media (min-width: 1024px) {
         padding: 50px 180px 50px 180px;
         }

@@ -1,0 +1,21 @@
+// Components
+@use '../variables' as *;
+@use '../mixins' as *;
+
+.navbarrestaurants {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+    position: relative;
+
+    &__arrow {
+        position: absolute;
+        left: 5%;
+
+        & i {
+            color: $font-color-gray;
+        }
+    }
+}

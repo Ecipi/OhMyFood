@@ -17,15 +17,38 @@
     margin-top: -30px;
     background-color: $bg-color-gray-light;
     border-radius: 40px 40px 0 0;
-    padding: 20px;
+    padding: 40px 20px 40px 20px;
+    display: flex;
+    flex-direction: column;
+
+
+    h2 {
+        font-size: 16px;
+        font-weight: 300;
+        position: relative;
+        margin-bottom: 20px;
+
+        &::after {
+            content: "";
+            display: block;
+            width: 40px;
+            height: 3px;
+            background-color: $color-tertiary;
+            position: absolute;
+            bottom: -9px;
+            left: 0;
+        }
+    }
 
     &__title {
         display: flex;
         justify-content: left;
         align-items: center;
+        padding-bottom: 40px;
 
         &__text {
             font-family: $font-title;
+            font-size: 28px;
         }
 
         &__like {
@@ -33,5 +56,134 @@
         }
     }
 
+    &__starter {
+        margin-bottom: 40px;
+
+        &__cards {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+
+            &__card {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: end;
+                background-color: $bg-color-white;
+                box-shadow: 0px 4.01px 15.04px 0px #0000001A;
+                border-radius: 15px;
+                padding: 15px;
+
+                &__text {
+                    display: flex;
+                    flex-direction: column ;
+                    gap: 7px;
+
+                    &__title {
+                        font-size: 18px;
+                        font-weight: 500;
+                    }
+
+                    &__description {
+                        font-size: 15px;
+                        font-weight: 300;
+                    }
+                }
+
+                &__price {
+                    font-size: 15px;
+                    font-weight: 700;
+                }
+            }
+        }
+    }
+
+    &__main {
+        margin-bottom: 40px;
+
+        &__cards {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+
+            &__card {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: end;
+                background-color: $bg-color-white;
+                box-shadow: 0px 4.01px 15.04px 0px #0000001A;
+                border-radius: 15px;
+                padding: 15px;
+
+                &__text {
+                    display: flex;
+                    flex-direction: column ;
+                    gap: 7px;
+
+                    &__title {
+                        font-size: 18px;
+                        font-weight: 500;
+                    }
+
+                    &__description {
+                        font-size: 15px;
+                        font-weight: 300;
+                    }
+                }
+
+                &__price {
+                    font-size: 15px;
+                    font-weight: 700;
+                }
+            }
+        }
+    }
     
+    &__dessert {
+        margin-bottom: 40px;
+
+        &__cards {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+
+            &__card {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: end;
+                background-color: $bg-color-white;
+                box-shadow: 0px 4.01px 15.04px 0px #0000001A;
+                border-radius: 15px;
+                padding: 15px;
+
+                &__text {
+                    display: flex;
+                    flex-direction: column ;
+                    gap: 7px;
+
+                    &__title {
+                        font-size: 18px;
+                        font-weight: 500;
+                    }
+
+                    &__description {
+                        font-size: 15px;
+                        font-weight: 300;
+                    }
+                }
+
+                &__price {
+                    font-size: 15px;
+                    font-weight: 700;
+                }
+            }
+        }
+    }  
+    
+    &__btn {
+        width: 50%;
+        @include btn-primary;
+    }
 }

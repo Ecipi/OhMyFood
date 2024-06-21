@@ -35,6 +35,7 @@
 
     &__btn {
         @include btn-primary;
+        cursor: pointer;
     }
 }
 

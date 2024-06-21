@@ -13,11 +13,13 @@
         }
 
     &__title {
+        h2 {
+        margin-bottom: 10px;
         font-family: $font-title;
         font-size: 18px;
         font-weight: 400;
         color: $font-color-white;
-        margin-bottom: 10px;
+        }
 
         @media (min-width: 1024px) {
             margin-left: 100px;

@@ -55,7 +55,19 @@
         &__like {
             position: absolute;
             right: 5%;
+
+            @media (min-width: 1024px) {
+                position: static;
+                margin-left: 5%;
+                }
         }
+
+        @media (min-width: 1024px) {
+            margin-left: 15%;
+            margin-right: 15%;
+            justify-content: center;
+            position: static;
+            }
     }
 
     &__starter {
@@ -98,6 +110,11 @@
                 }
             }
         }
+
+        @media (min-width: 1024px) {
+            margin-left: 15%;
+            margin-right: 15%;
+            }
     }
 
     &__main {
@@ -140,6 +157,11 @@
                 }
             }
         }
+
+        @media (min-width: 1024px) {
+            margin-left: 15%;
+            margin-right: 15%;
+            }
     }
     
     &__dessert {
@@ -182,6 +204,11 @@
                 }
             }
         }
+
+        @media (min-width: 1024px) {
+            margin-left: 15%;
+            margin-right: 15%;
+            }
     } 
     
     &__buttun {
@@ -192,5 +219,12 @@
     &__btn {
         @include btn-primary;
         padding: 16px 50px 16px 50px;
+        cursor: pointer;
     }
+
+    @media (min-width: 1024px) {
+        margin-left: 15%;
+        margin-right: 15%;
+        margin-top: -30px;
+        }
 }

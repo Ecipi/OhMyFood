@@ -14,7 +14,7 @@
 // Menu
 .menu {
     z-index: 1;
-    margin-top: -30px;
+    margin-top: -50px;
     background-color: $bg-color-gray-light;
     border-radius: 40px 40px 0 0;
     padding: 40px 20px 40px 20px;
@@ -45,6 +45,7 @@
         justify-content: left;
         align-items: center;
         padding-bottom: 40px;
+        position: relative;
 
         &__text {
             font-family: $font-title;
@@ -52,7 +53,8 @@
         }
 
         &__like {
-            margin-left: 15%;
+            position: absolute;
+            right: 5%;
         }
     }
 
@@ -180,10 +182,15 @@
                 }
             }
         }
-    }  
+    } 
+    
+    &__buttun {
+        display: flex;
+        justify-content: center;
+    }
     
     &__btn {
-        width: 50%;
         @include btn-primary;
+        padding: 16px 50px 16px 50px;
     }
 }

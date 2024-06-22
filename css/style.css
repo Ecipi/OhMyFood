@@ -67,7 +67,13 @@
   font-size: 16px;
   font-weight: 500;
   box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2509803922);
+  transition: opacity 0.3s, box-shadow 0.3s, transform 0.3s ease-in-out;
   cursor: pointer;
+}
+.hero__btn:hover {
+  opacity: 0.8;
+  box-shadow: 0 8px 20px 0 rgba(0, 0, 0, 0.2509803922);
+  transform: translateY(-1px);
 }
 
 .operation {
@@ -531,8 +537,14 @@
   font-size: 16px;
   font-weight: 500;
   box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2509803922);
+  transition: opacity 0.3s, box-shadow 0.3s, transform 0.3s ease-in-out;
   padding: 16px 50px 16px 50px;
   cursor: pointer;
+}
+.menu__btn:hover {
+  opacity: 0.8;
+  box-shadow: 0 8px 20px 0 rgba(0, 0, 0, 0.2509803922);
+  transform: translateY(-1px);
 }
 @media (min-width: 1024px) {
   .menu {

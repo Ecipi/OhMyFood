@@ -340,31 +340,60 @@
 }
 .menu__title {
   display: flex;
-  justify-content: left;
   align-items: center;
   padding-bottom: 40px;
-  position: relative;
+}
+.menu__title__desktop {
+  display: none;
+}
+@media (min-width: 1024px) {
+  .menu__title__desktop {
+    display: flex;
+    align-items: center;
+  }
+}
+.menu__title__left {
+  width: 80%;
+}
+@media (min-width: 1024px) {
+  .menu__title__left {
+    display: none;
+  }
+}
+.menu__title__right {
+  width: 20%;
+}
+@media (min-width: 1024px) {
+  .menu__title__right {
+    display: none;
+  }
 }
 .menu__title__text {
+  display: flex;
+  justify-content: flex-start;
   font-family: "Shrikhand";
   font-size: 28px;
 }
+@media (min-width: 1024px) {
+  .menu__title__text {
+    justify-content: center;
+  }
+}
 .menu__title__like {
-  position: absolute;
-  right: 5%;
+  padding-right: 20px;
+  display: flex;
+  justify-content: flex-end;
 }
 @media (min-width: 1024px) {
   .menu__title__like {
-    position: static;
-    margin-left: 5%;
+    padding-left: 24px;
   }
 }
 @media (min-width: 1024px) {
   .menu__title {
+    justify-content: center;
     margin-left: 15%;
     margin-right: 15%;
-    justify-content: center;
-    position: static;
   }
 }
 .menu__starter {

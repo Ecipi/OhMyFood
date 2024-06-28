@@ -73,7 +73,7 @@
 .hero__btn:hover {
   opacity: 0.8;
   box-shadow: 0 8px 20px 0 rgba(0, 0, 0, 0.2509803922);
-  transform: translateY(-1px) translateX(1px);
+  transform: translateY(-1px);
 }
 
 .operation {
@@ -544,7 +544,7 @@
 .menu__btn:hover {
   opacity: 0.8;
   box-shadow: 0 8px 20px 0 rgba(0, 0, 0, 0.2509803922);
-  transform: translateY(-1px) translateX(1px);
+  transform: translateY(-1px);
 }
 @media (min-width: 1024px) {
   .menu {
@@ -573,9 +573,20 @@ h2 {
 }
 .fa-solid--white {
   color: #FFFFFF;
+  border: 1px solid #000000;
 }
 .fa-solid--gray {
   color: #353535;
+}
+.fa-solid--animation:hover {
+  font-weight: 900;
+  background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.fa-regular {
+  font-size: 22px;
 }
 
 ul {

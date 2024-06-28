@@ -2,6 +2,40 @@
 @use '../variables' as *;
 @use '../mixins' as *;
 
+// Keyframes
+@keyframes fadeIn-starter {
+    0% {
+        opacity: 0;
+        transform: translateX(40px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeIn-main {
+    0% {
+        opacity: 0;
+        transform: translateX(-40px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeIn-dessert {
+    0% {
+        opacity: 0;
+        transform: translateX(40px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
 // Hero IMG
 .heroimg img{
     width: 100%;
@@ -101,6 +135,8 @@
 
     &__starter {
         margin-bottom: 40px;
+        opacity: 0;
+        animation: fadeIn-starter 1s ease-out 0.5s forwards;
 
         &__cards {
             display: flex;
@@ -149,6 +185,8 @@
 
     &__main {
         margin-bottom: 40px;
+        opacity: 0;
+        animation: fadeIn-main 1s ease-out 1.5s forwards;
 
         &__cards {
             display: flex;
@@ -196,6 +234,8 @@
     
     &__dessert {
         margin-bottom: 40px;
+        opacity: 0;
+        animation: fadeIn-dessert 1s ease-out 2.5s forwards;
 
         &__cards {
             display: flex;

@@ -68,7 +68,7 @@
   font-weight: 500;
   box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2509803922);
   opacity: 1;
-  transition: opacity 0.3s, box-shadow 0.3s, transform 0.3s ease-in-out;
+  transition: opacity 0.5s, box-shadow 0.5s, transform 0.5s ease-in-out;
   cursor: pointer;
 }
 .hero__btn:hover {
@@ -216,7 +216,7 @@
   font-size: 20px;
   font-weight: 300;
   color: #353535;
-  transition: color 0.5s ease-in-out, font-weight 0.5s ease-in-out;
+  transition: font-weight 1s ease-in-out, color 1s ease-in-out;
 }
 .restaurants__card__text__like:hover {
   color: #9356DC;
@@ -317,6 +317,36 @@
   color: #353535;
 }
 
+@keyframes fadeIn-starter {
+  0% {
+    opacity: 0;
+    transform: translateX(40px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+@keyframes fadeIn-main {
+  0% {
+    opacity: 0;
+    transform: translateX(-40px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+@keyframes fadeIn-dessert {
+  0% {
+    opacity: 0;
+    transform: translateX(40px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
 .heroimg img {
   width: 100%;
   height: 275px;
@@ -398,7 +428,7 @@
   justify-content: flex-end;
   font-weight: 300;
   color: #353535;
-  transition: color 0.5s ease-in-out, font-weight 0.5s ease-in-out;
+  transition: font-weight 1s ease-in-out, color 1s ease-in-out;
 }
 .menu__title__like:hover {
   color: #9356DC;
@@ -418,6 +448,8 @@
 }
 .menu__starter {
   margin-bottom: 40px;
+  opacity: 0;
+  animation: fadeIn-starter 1s ease-out 0.5s forwards;
 }
 .menu__starter__cards {
   display: flex;
@@ -460,6 +492,8 @@
 }
 .menu__main {
   margin-bottom: 40px;
+  opacity: 0;
+  animation: fadeIn-main 1s ease-out 1.5s forwards;
 }
 .menu__main__cards {
   display: flex;
@@ -501,6 +535,8 @@
 }
 .menu__dessert {
   margin-bottom: 40px;
+  opacity: 0;
+  animation: fadeIn-dessert 1s ease-out 2.5s forwards;
 }
 .menu__dessert__cards {
   display: flex;
@@ -554,7 +590,7 @@
   font-weight: 500;
   box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2509803922);
   opacity: 1;
-  transition: opacity 0.3s, box-shadow 0.3s, transform 0.3s ease-in-out;
+  transition: opacity 0.5s, box-shadow 0.5s, transform 0.5s ease-in-out;
   padding: 16px 50px 16px 50px;
   cursor: pointer;
 }

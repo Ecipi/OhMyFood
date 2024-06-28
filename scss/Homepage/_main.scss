@@ -185,5 +185,6 @@
     &__card__text__like {
         padding-right: 10px;
         font-size: 20px;
+        @include like;
     }
 }

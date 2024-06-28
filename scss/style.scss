@@ -28,17 +28,10 @@ h2 {
 
     &--white {
         color: $font-color-white;
-        border: 1px solid $font-color-black;
     }
 
     &--gray {
         color: $font-color-gray;
-    }    
-
-    &--animation {
-        &:hover {
-            @include like;
-        }        
     }
 }
 

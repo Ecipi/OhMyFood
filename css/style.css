@@ -71,10 +71,17 @@
   transition: opacity 0.5s, box-shadow 0.5s, transform 0.5s ease-in-out;
   cursor: pointer;
 }
-.hero__btn:hover {
+.hero__btn:active {
   opacity: 0.8;
   box-shadow: 0 8px 20px 0 rgba(0, 0, 0, 0.2509803922);
   transform: translateY(-1px);
+}
+@media (min-width: 1024px) {
+  .hero__btn:hover {
+    opacity: 0.8;
+    box-shadow: 0 8px 20px 0 rgba(0, 0, 0, 0.2509803922);
+    transform: translateY(-1px);
+  }
 }
 
 .operation {
@@ -593,10 +600,17 @@
   padding: 16px 50px 16px 50px;
   cursor: pointer;
 }
-.menu__btn:hover {
+.menu__btn:active {
   opacity: 0.8;
   box-shadow: 0 8px 20px 0 rgba(0, 0, 0, 0.2509803922);
   transform: translateY(-1px);
+}
+@media (min-width: 1024px) {
+  .menu__btn:hover {
+    opacity: 0.8;
+    box-shadow: 0 8px 20px 0 rgba(0, 0, 0, 0.2509803922);
+    transform: translateY(-1px);
+  }
 }
 @media (min-width: 1024px) {
   .menu {
@@ -688,6 +702,63 @@
 .menu article:hover:active .menu__dessert__cards__card__price {
   width: 100px;
   margin-right: 90%;
+}
+@media (min-width: 1024px) {
+  .menu article:hover::after {
+    right: 0;
+    opacity: 1;
+  }
+  .menu article:hover .menu__starter__cards__card__text {
+    width: 60%;
+  }
+  .menu article:hover .menu__starter__cards__card__text__title {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .menu article:hover .menu__starter__cards__card__text__description {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .menu article:hover .menu__starter__cards__card__price {
+    width: 100px;
+    margin-right: 90%;
+  }
+  .menu article:hover .menu__main__cards__card__text {
+    width: 60%;
+  }
+  .menu article:hover .menu__main__cards__card__text__title {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .menu article:hover .menu__main__cards__card__text__description {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .menu article:hover .menu__main__cards__card__price {
+    width: 100px;
+    margin-right: 90%;
+  }
+  .menu article:hover .menu__dessert__cards__card__text {
+    width: 60%;
+  }
+  .menu article:hover .menu__dessert__cards__card__text__title {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .menu article:hover .menu__dessert__cards__card__text__description {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .menu article:hover .menu__dessert__cards__card__price {
+    width: 100px;
+    margin-right: 90%;
+  }
 }
 
 * {

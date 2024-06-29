@@ -328,7 +328,7 @@
                 }
           }
   
-          &:hover {
+          &:hover:active {
             &::after {
               right: 0;
               opacity: 1;

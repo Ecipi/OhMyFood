@@ -634,58 +634,58 @@
     width: 10%;
   }
 }
-.menu article:hover::after {
+.menu article:hover:active::after {
   right: 0;
   opacity: 1;
 }
-.menu article:hover .menu__starter__cards__card__text {
+.menu article:hover:active .menu__starter__cards__card__text {
   width: 60%;
 }
-.menu article:hover .menu__starter__cards__card__text__title {
+.menu article:hover:active .menu__starter__cards__card__text__title {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
 }
-.menu article:hover .menu__starter__cards__card__text__description {
+.menu article:hover:active .menu__starter__cards__card__text__description {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
 }
-.menu article:hover .menu__starter__cards__card__price {
+.menu article:hover:active .menu__starter__cards__card__price {
   width: 100px;
   margin-right: 90%;
 }
-.menu article:hover .menu__main__cards__card__text {
+.menu article:hover:active .menu__main__cards__card__text {
   width: 60%;
 }
-.menu article:hover .menu__main__cards__card__text__title {
+.menu article:hover:active .menu__main__cards__card__text__title {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
 }
-.menu article:hover .menu__main__cards__card__text__description {
+.menu article:hover:active .menu__main__cards__card__text__description {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
 }
-.menu article:hover .menu__main__cards__card__price {
+.menu article:hover:active .menu__main__cards__card__price {
   width: 100px;
   margin-right: 90%;
 }
-.menu article:hover .menu__dessert__cards__card__text {
+.menu article:hover:active .menu__dessert__cards__card__text {
   width: 60%;
 }
-.menu article:hover .menu__dessert__cards__card__text__title {
+.menu article:hover:active .menu__dessert__cards__card__text__title {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
 }
-.menu article:hover .menu__dessert__cards__card__text__description {
+.menu article:hover:active .menu__dessert__cards__card__text__description {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
 }
-.menu article:hover .menu__dessert__cards__card__price {
+.menu article:hover:active .menu__dessert__cards__card__price {
   width: 100px;
   margin-right: 90%;
 }

@@ -1,250 +1,250 @@
 // Components
-@use '../variables' as *;
-@use '../mixins' as *;
+@use "../variables" as *;
+@use "../mixins" as *;
 
 // Keyframes
 @keyframes loader {
-    0% {
-      opacity: 1;
-    }
-    90% {
-      opacity: 1;
-    }
-    100% {
-      opacity: 0;
-      visibility: hidden;
-    }
+  0% {
+    opacity: 1;
   }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
 
-  @keyframes rotate {
-    0% {
-        transform: rotate(-1turn);
-    }
-    100% {
-        transform: rotate(1turn);
-    }
-}  
+@keyframes rotate {
+  0% {
+    transform: rotate(-1turn);
+  }
+  100% {
+    transform: rotate(1turn);
+  }
+}
 
 // Loader
 .loader {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: $bg-color-gray-light;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: $bg-color-gray-light;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+  animation: loader 3s ease-in-out forwards;
+
+  &__content {
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
-    z-index: 1;
-    animation: loader 3s ease-in-out forwards;
+    height: 100px;
+    width: 100px;
 
-    &__content {
-        position: relative;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 100px;
-        width: 100px;
-    
-        &::after {
-            content: "\f2e7";
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-family: "Font Awesome 5 Free";
-            font-weight: 900;
-            font-size: 40px;
-            position: absolute;
-            color: $font-color-black;
-            animation: rotate 3s ease-in-out;
+    &::after {
+      content: "\f2e7";
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: "Font Awesome 5 Free";
+      font-weight: 900;
+      font-size: 40px;
+      position: absolute;
+      color: $font-color-black;
+      animation: rotate 3s ease-in-out;
     }
-}
+  }
 }
 
 // Hero
 .hero {
-    display: flex;
-    flex-direction: column;
-    padding: 40px 20px 40px 20px;
-    align-items: center;
-    text-align: center;
-    background-color: $bg-color-gray-light;
+  display: flex;
+  flex-direction: column;
+  padding: 40px 20px 40px 20px;
+  align-items: center;
+  text-align: center;
+  background-color: $bg-color-gray-light;
+
+  @media (min-width: 1024px) {
+    padding: 30px 20px 30px 20px;
+  }
+
+  &__title {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 15px;
 
     @media (min-width: 1024px) {
-        padding: 30px 20px 30px 20px;
-        }
-
-    &__title {
-        font-size: 24px;
-        font-weight: 700;
-        margin-bottom: 15px;
-
-        @media (min-width: 1024px) {
-            font-size: 40px;
-            margin-bottom: 18px;
-            }
+      font-size: 40px;
+      margin-bottom: 18px;
     }
+  }
 
-    &__subtitle {
-        font-size: 18px;
-        font-weight: 300;
-        color: $font-color-gray;
-        margin-bottom: 25px;
-    }
+  &__subtitle {
+    font-size: 18px;
+    font-weight: 300;
+    color: $font-color-gray;
+    margin-bottom: 25px;
+  }
 
-    &__btn {
-        @include btn-primary;
-        cursor: pointer;
-    }
+  &__btn {
+    @include btn-primary;
+    cursor: pointer;
+  }
 }
 
 // Operation
 .operation {
+  display: flex;
+  flex-direction: column;
+  padding: 50px 30px 50px 30px;
+
+  @media (min-width: 1024px) {
+    padding: 50px 180px 50px 180px;
+  }
+
+  &__title {
+    margin-bottom: 35px;
+  }
+
+  &__groups {
     display: flex;
     flex-direction: column;
-    padding: 50px 30px 50px 30px;
+    gap: 25px;
 
     @media (min-width: 1024px) {
-        padding: 50px 180px 50px 180px;
-        }
-
-    &__title {
-        margin-bottom: 35px;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      padding: 30px;
+      gap: 35px;
     }
-    
-    &__groups {
-        display: flex;
-        flex-direction: column;
-        gap: 25px;
+  }
 
-        @media (min-width: 1024px) {
-            display: grid;
-            grid-template-columns: 1fr 1fr 1fr;
-            padding: 30px;
-            gap: 35px;
-            }
-    }
+  &__steps {
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    color: $font-color-black;
+    font-size: 16px;
+    font-weight: 500;
+    background-color: $bg-color-gray-light;
+    box-shadow: 0px 4px 15px 0px #00000026;
+    border-radius: 20px;
+    padding: 25px 35px 25px 35px;
+    align-items: center;
+    gap: 20px;
+  }
 
-    &__steps {
-        display: flex;
-        position: relative;
-        flex-direction: row;
-        color: $font-color-black;
-        font-size: 16px;
-        font-weight: 500;
-        background-color: $bg-color-gray-light;
-        box-shadow: 0px 4px 15px 0px #00000026;
-        border-radius: 20px;
-        padding: 25px 35px 25px 35px;
-        align-items: center;
-        gap: 20px;
-    }
-
-    &__num {
-        display: flex;
-        position: absolute;
-        top: 50%;
-        left: -3%;
-        transform: translate(0, -50%);
-        align-items: center;
-        justify-content: center;
-        color: $font-color-white;
-        background-color: $color-primary;
-        width: 24px;
-        height: 24px;
-        border-radius: 50%;
-    }
+  &__num {
+    display: flex;
+    position: absolute;
+    top: 50%;
+    left: -3%;
+    transform: translate(0, -50%);
+    align-items: center;
+    justify-content: center;
+    color: $font-color-white;
+    background-color: $color-primary;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+  }
 }
 
 // Restaurants
 .restaurants {
-    display: flex;
-    flex-direction: column;
-    padding: 40px 20px 40px 20px;
-    background-color: $bg-color-gray-light;
+  display: flex;
+  flex-direction: column;
+  padding: 40px 20px 40px 20px;
+  background-color: $bg-color-gray-light;
 
-    & a {
-        color: $font-color-black;
-    }
+  & a {
+    color: $font-color-black;
+  }
+
+  @media (min-width: 1024px) {
+    padding: 50px 180px 50px 180px;
+  }
+
+  &__title {
+    margin-bottom: 15px;
 
     @media (min-width: 1024px) {
-        padding: 50px 180px 50px 180px;
-        }
-
-    &__title {
-        margin-bottom: 15px;
-
-        @media (min-width: 1024px) {
-            margin-bottom: 28px;
-            }
+      margin-bottom: 28px;
     }
+  }
 
-    &__cards {
-        display: flex;
-        flex-direction: column;
-        gap: 20px;
+  &__cards {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 
-        @media (min-width: 1024px) {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 50px 100px;
-            }
+    @media (min-width: 1024px) {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 50px 100px;
     }
+  }
 
-    &__card {
-        display: flex;
-        flex-direction: column;
-        border-radius: 15px;
-        background-color: $bg-color-white;
-        position: relative;
-    }
+  &__card {
+    display: flex;
+    flex-direction: column;
+    border-radius: 15px;
+    background-color: $bg-color-white;
+    position: relative;
+  }
 
-    img{
-        width: 100%;
-        height: 170px;
-        object-fit: cover;
-        border-top-left-radius: 15px;
-        border-top-right-radius: 15px;
-    }
+  img {
+    width: 100%;
+    height: 170px;
+    object-fit: cover;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+  }
 
-    &__card__tag {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        padding: 5px 15px 5px 15px;
-        position: absolute;
-        background-color: $bg-color-green;
-        color: $font-color-green;
-        font-size: 14px;
-        font-weight: 500;
-        top: 5%;
-        right: 5%;
-        box-shadow: 0px 2px 4px 0px #00000026;
-        border-radius: 2px;
-    }
+  &__card__tag {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px 15px 5px 15px;
+    position: absolute;
+    background-color: $bg-color-green;
+    color: $font-color-green;
+    font-size: 14px;
+    font-weight: 500;
+    top: 5%;
+    right: 5%;
+    box-shadow: 0px 2px 4px 0px #00000026;
+    border-radius: 2px;
+  }
 
-    &__card__text {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        padding: 15px;
-    }
+  &__card__text {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+  }
 
-    &__card__text__title {
-        font-size: 18px;
-        font-weight: 700;
-        margin-bottom: 5px;
-    }
+  &__card__text__title {
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 5px;
+  }
 
-    &__card__text__subtitle {
-        font-size: 17px;
-        font-weight: 300;
-    }
+  &__card__text__subtitle {
+    font-size: 17px;
+    font-weight: 300;
+  }
 
-    &__card__text__like {
-        padding-right: 10px;
-        font-size: 20px;
-        @include like;
-    }
+  &__card__text__like {
+    padding-right: 10px;
+    font-size: 20px;
+    @include like;
+  }
 }

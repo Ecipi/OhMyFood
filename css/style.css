@@ -28,6 +28,52 @@
   }
 }
 
+@keyframes loader {
+  0% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    display: none;
+  }
+}
+@keyframes rotate {
+  0% {
+    transform: rotate(-1turn);
+  }
+  100% {
+    transform: rotate(1turn);
+  }
+}
+.loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #F6F6F6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+  animation: loader 3s ease-in-out forwards;
+}
+.loader__content {
+  position: relative;
+}
+.loader__content::after {
+  content: "\f2e7";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  font-size: 40px;
+  position: absolute;
+  color: #000000;
+  animation: rotate 3s;
+}
+
 .hero {
   display: flex;
   flex-direction: column;

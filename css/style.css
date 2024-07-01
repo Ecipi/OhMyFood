@@ -37,7 +37,7 @@
   }
   100% {
     opacity: 0;
-    display: none;
+    visibility: hidden;
   }
 }
 @keyframes rotate {
@@ -63,15 +63,23 @@
 }
 .loader__content {
   position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  width: 100px;
 }
 .loader__content::after {
   content: "\f2e7";
+  display: flex;
+  align-items: center;
+  justify-content: center;
   font-family: "Font Awesome 5 Free";
   font-weight: 900;
   font-size: 40px;
   position: absolute;
   color: #000000;
-  animation: rotate 3s;
+  animation: rotate 3s ease-in-out;
 }
 
 .hero {

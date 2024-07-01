@@ -12,7 +12,7 @@
     }
     100% {
       opacity: 0;
-      display: none;
+      visibility: hidden;
     }
   }
 
@@ -41,15 +41,23 @@
 
     &__content {
         position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100px;
+        width: 100px;
     
         &::after {
             content: "\f2e7";
+            display: flex;
+            align-items: center;
+            justify-content: center;
             font-family: "Font Awesome 5 Free";
             font-weight: 900;
             font-size: 40px;
             position: absolute;
             color: $font-color-black;
-            animation: rotate 3s;
+            animation: rotate 3s ease-in-out;
     }
 }
 }

@@ -535,6 +535,8 @@
 .menu__starter__cards__card__price {
   font-size: 15px;
   font-weight: 700;
+  padding-right: 0;
+  transition: padding-right 0.3s ease-in-out;
 }
 @media (min-width: 1024px) {
   .menu__starter {
@@ -578,6 +580,8 @@
 .menu__main__cards__card__price {
   font-size: 15px;
   font-weight: 700;
+  padding-right: 0;
+  transition: padding-right 0.3s ease-in-out;
 }
 @media (min-width: 1024px) {
   .menu__main {
@@ -621,6 +625,8 @@
 .menu__dessert__cards__card__price {
   font-size: 15px;
   font-weight: 700;
+  padding-right: 0;
+  transition: padding-right 0.3s ease-in-out;
 }
 @media (min-width: 1024px) {
   .menu__dessert {

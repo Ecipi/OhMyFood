@@ -156,7 +156,7 @@
     gap: 35px;
   }
 }
-.operation__steps {
+.operation__groups__steps {
   display: flex;
   position: relative;
   flex-direction: row;
@@ -170,7 +170,7 @@
   align-items: center;
   gap: 20px;
 }
-.operation__num {
+.operation__groups__steps__num {
   display: flex;
   position: absolute;
   top: 50%;
